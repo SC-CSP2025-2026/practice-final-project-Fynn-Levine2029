@@ -1,10 +1,10 @@
 const url =
-  "https://student-api-proxy.onrender.com/api/wordsapiv1.p.rapidapi.com/random/word";
+  "https://student-api-proxy.onrender.com/api/wordsapiv1.p.rapidapi.com/words/fish";
 const options = {
   method: "GET",
   headers: {
     "X-API-Key":
-      "e76d0dc39f73ebfee7899fdbdc6410b3c1078ae519dd47b4d3ae33b2900b7d8d",
+      "c355fe65e937daae839c9c7858abc50a20f4109f72d7902de404b853c6c7cdfc",
   },
 };
 

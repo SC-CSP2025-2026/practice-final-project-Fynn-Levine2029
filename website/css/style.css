@@ -10,13 +10,42 @@ body {
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=e2dbdd&c2=fee26a&gt=l&gd=dbb
 */
-  align-items: center;
+  /* align-items: center; */
   background: #e2dbdd;
   background: linear-gradient(180deg, #e2dbdd, #fee26a);
-  display: flex;
-  text-align: center;
+  font-family: "Crimson Text", static, serif;
+  /* display: flex;
+  text-align: center; */
 }
 
-h1 {
-  font-family: "Crimson Text", static, serif;
+.container {
+  display: flex;
+  gap: 35px;
+  padding: 30px;
+}
+
+.words-input {
+  width: 550px;
+}
+
+.words-input input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.07rem;
+  margin: 10px 0 20px 0;
+  outline: none;
+  padding: 0 15px;
+  width: 100%;
+  height: 46px;
+}
+
+.words-input button {
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
 }
