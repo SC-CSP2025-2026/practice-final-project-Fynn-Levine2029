@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Practice Final Project</title>
+    <title>The Devaughn Dictionary</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,17 +14,84 @@
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <div class="words-input">
-        <h3>Enter A Word</h3>
-        <input
-          class="definition-input"
-          type="text"
-          placeholder="Enter A Word For Its Definition"
-        />
-        <button class="search-btn">Search</button>
+
+    <div class="container-hdr">
+      <div class="row">
+        <div class="wrapper-site-hdr">
+          <header class="site-hdr site-hdr-mobile-enabled" id="id-site-hdr">
+            <h2 class="hdr-devaughn-dictionary">The Devaughn Dictionary</h2>
+            <search class="form-search-word-container">
+              <form
+                method="post"
+                class="form-search-word"
+                id="form-search-word"
+                name="form-search-word"
+              >
+                <div class="search-container">
+                  <div class="search-input-container">
+                    <!-- <button
+                      aria-label="Dismiss search"
+                      id="dismiss-search-button"
+                      type="button"
+                    >
+                      <img
+                        src="https://cdn.dictionary.com/arrow-left-CKzd9DBW.svg"
+                        alt=""
+                        width="20"
+                        id="mobile-search-back-button"
+                        height="20"
+                      />
+                    </button> -->
+                    <input
+                      autocapitalize="off"
+                      id="input-search-word"
+                      class="input-search-word"
+                      name="inputSearchWord"
+                      placeholder="Search For A Word"
+                      type="search"
+                      autocomplete="off"
+                    />
+                    <button class="btn-search-word">Search</button>
+                  </div>
+                </div>
+              </form>
+            </search>
+          </header>
+        </div>
       </div>
     </div>
+
+    <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Generate A Random Word</h5>
+        <p class="card-text">Click Down Below To Learn A New Word!</p>
+        <!-- <div class="row">
+            <div class="col">
+                <input class="random-input" type="text" name="" id="" />
+            </div>
+        </div> -->
+        <a href="#" id="generate-btn" class="btn btn-primary">Generate</a>
+        <div class="row">
+            <ul class="list-group">
+                <li class="list-group-item">lorem ipsum blah blah</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- <div class="card text-center" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Generate A Random Word</h5>
+        <p class="card-text">
+          Click down below to generate and learn about a random word.
+        </p>
+        <a href="#" class="btn btn-primary">Generate A Word</a>
+      </div>
+    </div> -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
