@@ -53,36 +53,6 @@ h2 {
   width: 100%;
 }
 
-.col-sm-6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 319px;
-  bottom: 55px;
-  border-radius: 10px;
-  border: none;
-}
-
-.card {
-  align-items: center;
-  border: none;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  right: 159px;
-  top: 5px;
-  padding: 6px;
-  position: relative;
-}
-
-.list-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .wrapper-site-hdr
   .form-search-word-container
   .form-search-word
@@ -128,31 +98,6 @@ h2 {
   align-items: center;
 }
 
-.btn-primary {
-  background-color: #fdda0d;
-  border: 0px;
-  color: white;
-  padding: 10px;
-  margin-bottom: 9px;
-  width: 350px;
-  text-align: center;
-}
-
-.list-group-item {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  bottom: -2.5px;
-  left: 6px;
-  width: 350px;
-}
-
 .btn-primary:hover {
   background-color: #fdda0d;
-}
-
-.generate-btn {
-  display: block;
 }
