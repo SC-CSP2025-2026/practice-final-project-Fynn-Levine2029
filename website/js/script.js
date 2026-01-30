@@ -23,34 +23,10 @@ const searchWords = async (searchTerm) => {
   const result = await response.json();
   console.log(result);
   const words = result.data;
-
-  //   const response = await fetch(url, options);
-  //   const result = await response.json();
-  //   console.log(result);
-  //   const word = result.data.word;
-
-  //   console.log(result.data.word);
-  //   const listItem = `
-  //               <li class="list-group-item">${word}`;
-  //   listGroup.insertAdjacentHTML("beforeend", listItem);
-
-  //   fetch(url, options)
-  //     .then((response) =>
-  //       response.json().then((result) => {
-  //         console.log(result.data); // Your API data
-  //         console.log(`Cost: $${result.meta.cost}`);
-  //         console.log(`Remaining: $${result.meta.remaining_budget}`);
-  //       })
-  //     )
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-
-  searchButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    const searchTerm = inputSearchWord.value.trim();
-    searchWords(searchTerm);
-  });
 };
 
-searchWords();
+searchButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  const searchTerm = inputSearchWord.value.trim();
+  searchWords(searchTerm);
+});
