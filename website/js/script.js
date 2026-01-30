@@ -1,6 +1,6 @@
 // const definitionInput = document.querySelector(".definition-input");
 const inputSearchWord = document.querySelector(".input-search-word");
-const searchButton = document.querySelector(".search-btn");
+const searchButton = document.querySelector(".btn-search-word");
 const listGroup = document.querySelector(".list-group");
 
 const searchWords = async (searchTerm) => {

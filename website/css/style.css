@@ -72,6 +72,20 @@ h2 {
   display: flex;
 }
 
+.card-container {
+  align-items: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.word-card {
+  text-align: left;
+}
+
+.word-description {
+  text-align: center;
+}
+
 .wrapper-site-hdr
   .form-search-word-container
   .form-search-word
