@@ -27,6 +27,7 @@ const searchWords = async (searchTerm) => {
   console.log(data);
   const definitions = data.definitions;
 
+  wordCardDiv.innerHTML = "";
   definitions.forEach((wordResult) => {
     // console.log(word.definitions);
     let card = `
