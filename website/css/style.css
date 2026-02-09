@@ -14,6 +14,7 @@ body {
   background: #e2dbdd;
   background: linear-gradient(180deg, #e2dbdd, #fee26a);
   font-family: "Crimson Text", static, serif;
+  width: 100%;
   /* display: flex;
   text-align: center; */
 }
@@ -30,7 +31,7 @@ h2 {
   text-align: center;
 }
 
-.form-search-word-container {
+.search-input-container {
   background-color: white;
   border-radius: 12px;
   width: 800px;
@@ -38,6 +39,9 @@ h2 {
 
 .btn-search-word {
   margin: 4px;
+  background-color: #fdda0d;
+  border-radius: 12px;
+  border: none;
 }
 
 .search-container .search-input-container {
@@ -53,10 +57,7 @@ h2 {
   width: 100%;
 }
 
-.wrapper-site-hdr
-  .form-search-word-container
-  .form-search-word
-  .btn-search-word {
+.wrapper-site-hdr .search-input-container .input-search-word .btn-search-word {
   background-color: #fdda0d;
   color: #fff;
   text-align: center;
@@ -86,10 +87,7 @@ h2 {
   text-align: center;
 }
 
-.wrapper-site-hdr
-  .form-search-word-container
-  .form-search-word
-  .input-search-word {
+.wrapper-site-hdr .search-input-container .input-search-word {
   height: var(--form-search-word-height);
   background: url(https://cdn.dictionary.com/icon-magnify-glass-C95mo79y.svg)
     16px / 16px no-repeat;
@@ -110,8 +108,4 @@ h2 {
   font-size: 40px;
   justify-content: center;
   align-items: center;
-}
-
-.btn-primary:hover {
-  background-color: #fdda0d;
 }

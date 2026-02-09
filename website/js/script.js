@@ -20,20 +20,34 @@ const searchWords = async (searchTerm) => {
     },
   };
 
-  getWordAndGiveDefinition(url, options);
+  const response = await fetch(url, options);
+  const result = await response.json();
+  const data = result.data; //getSampleSearchWordTrace();
+
+  console.log(data);
+  const definitions = data.definitions;
+
+  definitions.forEach((wordResult) => {
+    // console.log(word.definitions);
+    let card = `
+            <li class="card">
+                <h4>${wordResult.definition}</h4>
+            `;
+    card = card.concat(`</li>`);
+    wordCardDiv.insertAdjacentHTML("beforeend", card);
+  });
 };
 
 const getWordAndGiveDefinition = async (url, options) => {
-  const response = await fetch(url, options);
-  const result = await response.json();
-  const data = getSampleSearchWordTrace();
-
-  console.log(data);
-  const words = data.definitions;
-
-  words.forEach((word) => {
-    console.log(word.definitions);
-  });
+  //   words.forEach((word) => {
+  //     // console.log(word.definitions);
+  //     let card = `
+  //             <li class="card">
+  //                 <h4>${word.definition}</h4>
+  //             `;
+  //     card = card.concat(`</li>`);
+  //     wordCardDiv.insertAdjacentHTML("beforeend", card);
+  //   });
 };
 
 // wordCardDiv.innerHTML = "";
